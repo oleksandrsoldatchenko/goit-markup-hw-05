@@ -116,6 +116,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav .current {
@@ -157,6 +158,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contact:hover,
@@ -227,7 +229,11 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    text-align: center;}
+    text-align: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .btn-blue:hover,
 .btn-blue:focus,
@@ -367,6 +373,10 @@ body {
     height: 44px;
     border-radius: 50%;
     fill: rgba(175, 177, 184, 1);
+    background-color: transparent;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sn-team-link:hover,
@@ -391,6 +401,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-button:hover,
@@ -440,6 +452,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: var(--hero-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-adress:hover,
@@ -460,6 +473,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact:hover,
@@ -504,8 +518,10 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     fill: var(--hero-text-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sn-link:hover,
@@ -543,6 +559,9 @@ body {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn-cont .portfolio-nav:last-child {
@@ -567,10 +586,14 @@ body {
 /* portfolio list */
 
 .portfolio-list {
-    background: var(--hero-text-color);
+    background-color: var(--hero-text-color);
+    box-shadow: transparent;
     
     margin-right: 30px;
     margin-bottom: 30px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list:hover,
