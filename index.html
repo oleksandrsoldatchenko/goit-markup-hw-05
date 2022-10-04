@@ -357,6 +357,25 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- ДЗ 6 -->
+            <!-- Форма підписки на розсилку -->
+            <form class="footer-subscribe">
+                <div class="footer-subscribe-conrainer">
+                    <div class="footer-subscribe-label">
+                        <label class="title-subscribe" for="email">Підпишіться на розсилку</label>
+                        <input class="imput-email" name="email" type="email" id="email" placeholder="E-mail">
+                    </div>
+                    <button type="submit" class="footer-btn">Підписатися
+                        <svg class="footer-send" width="24" height="24">
+                            <use href="./images/sptite3.svg#footer-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <!-- Кінець форми підписки на розсилку -->
+            <!-- ДЗ 6 -->
+
         </div>
     </footer>
 
@@ -368,6 +387,51 @@
                     <use href="./images/modal/sprite-modal.svg#close-btn"></use>
                 </svg>
             </button>
+
+            <!-- ДЗ 6 -->
+            <!-- Форма в модальному вікні -->
+            <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form autocomplete="off">
+                <div class="input-area">
+                    <label class="form-label" for="name">Ім'я
+                        <input class="form-input" name="name" type="text" id="name" required minlength="3" maxlength="20" >
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/sptite3.svg#modal-person"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="input-area">
+                    <label class="form-label" for="name">Телефон
+                        <input class="form-input" name="name" type="text" id="name" required minlength="3" maxlength="20" >
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/sptite3.svg#modal-phone"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="input-area">
+                    <label class="form-label" for="name">Пошта
+                        <input class="form-input" name="name" type="text" id="name" required minlength="3" maxlength="20" >
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/sptite3.svg#modal-email"></use>
+                        </svg>
+                    </label>
+                </div>
+                <label class="form-label" for="comment">Коментар
+                    <textarea class="form-text-area" id="comment" placeholder="Введіть текст"></textarea>
+                </label>
+                <label class="privacy">
+                    <input class="privacy-input" type="checkbox" name="privacy" />
+                    <span class="privacy-wrapp">
+                        <svg class="modal-check" width="16" height="15">
+                            <use href="./images/sptite3.svg#modal-check"></use>
+                        </svg>
+                    </span>
+                </label>
+                <button class="btn-blue" type="submit">Відправити</button>
+            </form>
+            <!-- Кінець форми в модальному вікні -->
+            <!-- ДЗ 6 -->
+
         </div>
     </div>
     <!-- Кінець модального вікна -->
